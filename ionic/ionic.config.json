@@ -1,0 +1,15 @@
+{
+  "name": "ionic-photo-gallery",
+  "app_id": "2e3df8d5",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

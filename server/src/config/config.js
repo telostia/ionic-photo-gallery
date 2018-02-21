@@ -25,13 +25,13 @@ config.token = {
 
 // Server settings
 config.server = {
-    host: '0.0.0.0',
+    host: '192.168.20.155',
     port: process.env.NODE_PORT || process.env.PORT || 3000
 };
 
 // MongoDB settings
 config.mongodb = {
-    dbURI: process.env.MONGODB_URI || process.env.MONGOLAB_URI || "mongodb://127.0.0.1:27017/ionic-photo-gallery",
+    dbURI: process.env.MONGODB_URI || process.env.MONGOLAB_URI || "mongodb://192.168.20.155:27017/ionic-photo-gallery",
     dbOptions: {"user": "", "pass": ""}
 };
 
@@ -45,7 +45,7 @@ if (process.env.REDISTOGO_URL) {
 }
 config.redis = {
     isAvailable: process.env.IS_REDIS_AVAILABLE || true,
-    host: process.env.REDIS_HOST || '127.0.0.1',
+    host: process.env.REDIS_HOST || '192.168.20.155',
     port: process.env.REDIS_PORT || 6379,
     auth: process.env.REDIS_AUTH || '',
     options: {}
